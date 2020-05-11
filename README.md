@@ -13,7 +13,7 @@ $ npm install vue-click-outside
 ```vue
 <template>
   <div>
-    <div v-click-outside="hide" @click="toggle">Toggle</div>
+    <div v-click-outside="hide" @click.stop="toggle">Toggle</div>
     <div v-show="opened">Popup item</div>
   </div>
 </template>
